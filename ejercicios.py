@@ -10,7 +10,6 @@ def promedio_arreglo_r(ar):
     #Ejecuta el algoritmo
     else:
         s = 0   #Variable s de suma declarada e inicializada en 0
-        
         #Ciclo que recorre el arreglo y suma cada índice
         for i in range(0,len(ar)):
 
@@ -31,7 +30,8 @@ def producto_punto_r(v,w):
     if len(v) == 0 or len(w) == 0:
         return "\nUn arreglo está vacío."
     #Comprueba si los arreglos tienen la misma cantidad de elementos
-    elif len(v) == len(w):    s = 0
+    elif len(v) == len(w):    
+        s = 0
     #Recorre los arreglos, multiplica los indices y guarda su valor, suma con cada vuelta al valor previo
         for i in range(0,len(v)):
 
@@ -52,7 +52,8 @@ def producto_directo_r(v,w):
     if len(v) == 0 or len(w) == 0:
         return "\nUn arreglo está vacío."
     #Comprueba si los arreglos tienen la misma cantidad de elementos
-    elif len(v) == len(w):    pd = []
+    elif len(v) == len(w):    
+        pd = []
     #Recorre los arreglos, multiplica los indices y guarda su valor, luego lo asigna a un array vacío
         for i in range(0,len(v)):
             p = v[i] * w[i]
