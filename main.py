@@ -4,7 +4,7 @@ import ejercicios
 
 def main():
 
-    ejercicios.promedio_arreglo_r()
+    ejercicios.promedio_arreglo_r(([1,2,3]))
     ejercicios.producto_punto_r()
     ejercicios.producto_directo_r()
 

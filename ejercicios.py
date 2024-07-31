@@ -26,7 +26,6 @@ def promedio_arreglo_r(ar):
         p = s / len(ar)
         return p
     
-#print(promedio_arreglo_r([1,2,"sapa"]))
 
 #-- Problema 2 --
 # Algoritmo que calcule el producto punto de dos arreglos de reales
@@ -58,9 +57,7 @@ def producto_punto_r(v,w):
     else:
         return "\nCantidad de elementos desigual."  
 
-#v = [1/2,7/5,3/2]
-#w = [4,5,6]
-#print(producto_punto_r(v,w))
+
 
 #-- Problema 3 --
 # Algoritmo que calcula el producto directo de dos arreglos de reales
@@ -90,5 +87,5 @@ def producto_directo_r(v,w):
     else:
         return "\nCantidad de elementos desigual." 
     
-print(producto_directo_r([1,2,3],[1,2,3]))
+
 
