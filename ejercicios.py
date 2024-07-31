@@ -23,7 +23,6 @@ def promedio_arreglo_r(ar):
         p = s / len(ar)
         return p
     
-
 #-- Problema 2 --
 # Algoritmo que calcule el producto punto de dos arreglos de reales
 
@@ -62,6 +61,3 @@ def producto_directo_r(v,w):
     #Termina si hay una diferencia en la cantidad de elementos
     else:
         return "\nCantidad de elementos desigual." 
-    
-
-
