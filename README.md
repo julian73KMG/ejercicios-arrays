@@ -19,3 +19,8 @@ Errores
 
 ![image](https://github.com/user-attachments/assets/1ca30d07-4384-485b-9aa6-61d817487262)
 
+
+Integrantes:
+Julián Andrés Méndez
+Johan Samuel Fuquene
+
