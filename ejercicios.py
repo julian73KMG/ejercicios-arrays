@@ -1,91 +1,103 @@
-##Autor Julian Mendez
-##Se presentarán tres funciones cuya finalidad es realizar operaciones de arreglos
-
-#-- Problema 1 --
-# Algoritmo que calcule el promedio de un arreglo de reales
-def promedio_arreglo_r(ar):
-
-    #Comprueba si el arreglo no es vacío
-    if len(ar) == 0:
-        return "\nEl arreglo está vacío."
-
-    #Ejecuta el algoritmo
+# 1 - Definir una función max() que tome como argumento dos números y devuelva el mayor de ellos.
+def max(a,b):
+    if a > b:
+        max = a
+    elif b > a:
+        max = b
     else:
-        s = 0   #Variable s de suma declarada e inicializada en 0
-        
-        #Ciclo que recorre el arreglo y suma cada índice
-        for i in range(0,len(ar)):
+        return " \nLos numeros son iguales."
+    return max
 
-            #Comprueba si hay un string
-            if type(ar[i]) == str:
-                 return "\nEntrada invalida, solo numeros"
-            else:
-                 s += ar[i]
-
-        #Se calcula el promedio
-        p = s / len(ar)
-        return p
-    
-
-#-- Problema 2 --
-# Algoritmo que calcule el producto punto de dos arreglos de reales
-
-def producto_punto_r(v,w):
-
-    #Comprueba si el arreglo no es vacío
-    if len(v) == 0 or len(w) == 0:
-        return "\nUn arreglo está vacío."
-    
-    
-    #Comprueba si los arreglos tienen la misma cantidad de elementos
-    elif len(v) == len(w):
-
-        s = 0
-
-    #Recorre los arreglos, multiplica los indices y guarda su valor, suma con cada vuelta al valor previo
-        for i in range(0,len(v)):
-
-            if type(v[i]) == str or type(w[i]) == str:
-                 return "\nEntrada invalida, solo numeros."
-            
-            else:
-
-                s += v[i] * w[i]
-        return s 
-    
-    #Termina si hay una diferencia en la cantidad de elementos
+#2 - Definir una función max_de_tres(), que tome tres números como argumentos y devuelva el mayor de ellos.
+def max_tres(a,b,c):
+    if a>b and a>c:
+        max = a
+    elif b>c and b>a:
+        max = b
+    elif c>a and c>b:
+        max = c
     else:
-        return "\nCantidad de elementos desigual."  
+        return "\nDos o mas numeros son iguales"
+    return max
 
+#3 - Definir una función que calcule la longitud de una lista o una cadena dada.
+def longitud(a):
+    l = 0
+    for _ in a:
+        l+=1
+    return l
 
-
-#-- Problema 3 --
-# Algoritmo que calcula el producto directo de dos arreglos de reales
-
-def producto_directo_r(v,w):
-
-    #Comprueba si el arreglo no es vacío
-    if len(v) == 0 or len(w) == 0:
-        return "\nUn arreglo está vacío."
-    
-    
-    #Comprueba si los arreglos tienen la misma cantidad de elementos
-    elif len(v) == len(w):
-
-        pd = []
-
-    #Recorre los arreglos, multiplica los indices y guarda su valor, luego lo asigna a un array vacío
-        for i in range(0,len(v)):
-
-            p = v[i] * w[i]
-            
-            pd.append(p)
-            
-        return pd
-    
-    #Termina si hay una diferencia en la cantidad de elementos
+#4 - Escribir una función que tome un carácter y devuelva True si es una vocal, de lo contrario devuelve False.
+def esVocal(v):
+    if v=='a' or v=='A':
+        r = True
+    elif v=='e' or v=='E':
+        r = True
+    elif v=='i' or v=='I':
+        r = True
+    elif v=='o' or v=='O':
+        r = True
+    elif v=='u' or v=='U':
+        r = True
     else:
-        return "\nCantidad de elementos desigual." 
-    
+        r = False
+    return r
+
+#5 - Escribir una función sum() que sume todos los números de una lista.
+def sum(a):
+    s = 0
+    for i in range(len(a)):
+        s += a[i]
+    return s
+
+#5 - Escribir función multip() que multiplique todos los números de una lista.
+def mult(a):
+    s = 1
+    for i in range(len(a)):
+        s *= a[i]
+    return s
+
+#6 - Definir una función inversa() que calcule la inversión de una cadena.
+def inverso(a):
+    inv=()
+    for _ in a:
+        inv = a[::-1]
+    return inv
+
+#7 - Definir una función es_palindromo() que reconoce palíndromos
+def palindromo(a):
+    if a[::-1] == a:
+        p = True
+    else:
+        p = False
+
+    return p
+
+#8 -  Definir una función superposicion() que tome dos listas y devuelva True si tienen
+#  al menos 1 miembro en común o devuelva False de lo contrario.
+
+def superposicion(a,b):
+    for i in range(len(a)):
+        if a[i] in b:
+            s = True
+        else: s = False
+    return s
+
+#9 - Definir una función generar_n_caracteres() que tome un entero n y devuelva el caracter multiplicado por n. 
+
+def generarCaracter(n,c):
+    for _ in c:
+        r = n*c
+    return r
+
+#10 - Definir un histograma procedimiento() que tome una lista de números enteros e imprima un histograma en la pantalla.
+
+def  histograma(a):
+    for i in range(0,len(a)):
+        h = a[i]*'*'
+        print(h)
+    return " "
 
 
+
+print(histograma([4,9,7,6]))
